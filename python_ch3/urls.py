@@ -18,9 +18,24 @@ from django.urls import path
 
 import helloworld.views as helloworld_views
 import helloworld2.views as helloworld2_views
+import emaillist.views as emaillist_views
 
 urlpatterns = [
-    path('helloworld2/',helloworld2_views.hello2),
+    path('emaillist/add', emaillist_views.add),
+    path('emaillist/form', emaillist_views.form),
+    path('emaillist/', emaillist_views.index),
+    path('helloworld2/', helloworld2_views.hello2),
     path('helloworld/', helloworld_views.hello),
+    path('helloworld/hello2/<int:id>', helloworld_views.hello),
+    path('helloworld/hello3', helloworld_views.hello3),
+
+    path('helloworld/counter/add', helloworld_views.counter_add),
+    path('helloworld/counter/max', helloworld_views.counter_max),
+    path('helloworld/counter/update', helloworld_views.counter_update),
+
+
+
+
+
     path('admin/', admin.site.urls),
 ]
