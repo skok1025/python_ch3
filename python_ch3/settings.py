@@ -82,7 +82,7 @@ DATABASES = {
             'NAME': 'djdb',
             'USER': 'djdb',
             'PASSWORD':'djdb',
-            'HOST':'192.168.1.46',
+            'HOST':'192.168.1.234',
             'PORT':5432
     }
 }
